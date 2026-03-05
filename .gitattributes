@@ -1,0 +1,3 @@
+*.asm linguist-language=Assembly
+*.ps1 linguist-detectable=false
+*.cmd linguist-detectable=false
