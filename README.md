@@ -1,61 +1,56 @@
 # Assembly Showcase Lab
 
-Mini-Repo mit einfachen, klaren NASM-Beispielen fuer x64.
+Small NASM x64 playground with a few clean, practical examples.
 
-## Inhalt
+## What is in this repo?
 
-- `src/win64/math/sum_u64.asm`
-  - Summiert ein `uint64_t`-Array.
-- `src/win64/strings/strlen.asm`
-  - Laenge eines nullterminierten Strings.
-- `src/win64/bit/bitcount_u64.asm`
-  - Zaehlt gesetzte Bits in einem 64-Bit-Wert.
-- `src/linux64/hello.asm`
-  - Minimales Linux `_start` Beispiel mit `write` + `exit`.
+- `src/win64/math/sum_u64.asm`  
+  Sum a `uint64_t` array.
+- `src/win64/strings/strlen.asm`  
+  Return the length of a null-terminated string.
+- `src/win64/bit/bitcount_u64.asm`  
+  Count set bits in a 64-bit value.
+- `src/linux64/hello.asm`  
+  Minimal Linux `_start` example (`write` + `exit`).
 
-## Build (Windows PowerShell)
+## Build on Windows
 
 ```powershell
 .\build.ps1
 ```
 
-Das Skript erzeugt:
+Output:
 
 - `build\win64\*.obj`
 - `build\linux64\*.o`
 
-Hinweis:
-- Die Windows-Objekte sind sofort in C/C++ Projekte linkbar.
-- Das Linux-Beispiel wird hier nur assembliert (kein Link/Run auf Windows).
+Notes:
 
-## Direkt testen (ein Klick)
+- Windows objects can be linked directly into C/C++ projects.
+- The Linux sample is assembled on Windows, but not linked/run there.
 
-Doppelklick auf:
+## Run the demo quickly
+
+Double-click:
 
 - `run-demo.cmd`
 
-Oder im Terminal:
+or run:
 
 ```powershell
 powershell -ExecutionPolicy Bypass -File .\run-demo.ps1
 ```
 
-Das Skript:
+The demo script will:
 
-1. assembliert alle Beispiele
-2. kompiliert einen kleinen C++ Testrunner
-3. startet den Testrunner und zeigt PASS/FAIL
+1. assemble the `.asm` files
+2. compile a small C++ test runner
+3. execute tests and print PASS/FAIL
 
-## Warum dieses Repo?
+## Why this repo?
 
-Ein kleines Showcase, um zu zeigen:
+It is a compact public project to show basic low-level skills:
 
-- grundlegendes Register-/Speicherverstaendnis
-- Calling Convention (Windows x64)
-- Schleifen, Pointer-Arithmetik, bitweise Logik
-
-## Showcase Branding
-
-- Runner-Banner in der Konsole mit Statusfarben
-- Abschlusszeile: `coded by valuecoding`
-- Geeignet als kleines Public-Repo zum GitHub-Profil auffuellen
+- register and memory handling
+- Windows x64 calling convention
+- loops, pointer arithmetic, and bit operations
