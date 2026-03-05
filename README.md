@@ -28,6 +28,24 @@ Hinweis:
 - Die Windows-Objekte sind sofort in C/C++ Projekte linkbar.
 - Das Linux-Beispiel wird hier nur assembliert (kein Link/Run auf Windows).
 
+## Direkt testen (ein Klick)
+
+Doppelklick auf:
+
+- `run-demo.cmd`
+
+Oder im Terminal:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\run-demo.ps1
+```
+
+Das Skript:
+
+1. assembliert alle Beispiele
+2. kompiliert einen kleinen C++ Testrunner
+3. startet den Testrunner und zeigt PASS/FAIL
+
 ## Warum dieses Repo?
 
 Ein kleines Showcase, um zu zeigen:
