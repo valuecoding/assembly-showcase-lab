@@ -53,3 +53,9 @@ Ein kleines Showcase, um zu zeigen:
 - grundlegendes Register-/Speicherverstaendnis
 - Calling Convention (Windows x64)
 - Schleifen, Pointer-Arithmetik, bitweise Logik
+
+## Showcase Branding
+
+- Runner-Banner in der Konsole mit Statusfarben
+- Abschlusszeile: `coded by valuecoding`
+- Geeignet als kleines Public-Repo zum GitHub-Profil auffuellen

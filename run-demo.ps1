@@ -39,4 +39,8 @@ if ($LASTEXITCODE -ne 0) {
 
 Write-Host "[3/3] Run demo..."
 & $outputExe
-exit $LASTEXITCODE
+$code = $LASTEXITCODE
+if ($code -eq 0) {
+    Write-Host "coded by valuecoding" -ForegroundColor Cyan
+}
+exit $code
